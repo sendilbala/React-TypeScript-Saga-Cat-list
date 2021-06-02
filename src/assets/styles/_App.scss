@@ -1,0 +1,144 @@
+.App-logo {
+  animation: mymove 5s infinite;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: var(--white);
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #000;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.min-height-sm {
+  min-height: 100vh;
+}
+
+.min-height-lg {
+  height: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.m-b-md {
+  margin-bottom: 10px;
+}
+
+.m-b-lg {
+  margin-bottom: 20px;
+}
+
+.m-b-xl {
+  margin-bottom: 30px;
+}
+
+.m-l-md {
+  margin-left: 10px !important;
+}
+
+.m-h-md {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.m-h-lg {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+.p-h-lg {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.m-h-xl {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+}
+
+//move to component UI
+.side-bar__header {
+  margin-bottom: 2px;
+}
+
+.sidebar__wrapper {
+  min-width: 484px;
+  width: 484px;
+  max-width: 484px;
+  z-index: 1;
+}
+
+.side-bar__header p {
+  text-transform: capitalize;
+}
+
+.sidenav__wrapper {
+  max-width: 109px;
+  z-index: 999;
+}
+
+.sidenav a {
+  text-decoration: none;
+
+  &.open {
+    .nav-item {
+      background-color: #66ccc0 !important; //--seafoam-blue
+      color: #2d3039 !important; //--charcoal-grey
+    }
+    p {
+      color: #2d3039 !important; //--charcoal-grey
+    }
+  }
+
+  .nav-item {
+    background-color: transparent !important; //--seafoam-blue
+    color: #fff !important; //--charcoal-grey
+  }
+}
+
+.m-v-md {
+  margin: 10px 0 !important;
+}
+
+.switch .switch__label {
+  top: -13px !important;
+  font-family: Arial;
+  font-size: 0.88em;
+  color: var(--blueberry) !important;
+}
+
+.font-arial {
+  font-family: Arial !important;
+}
+
+.m-a-none {
+  margin: 0 !important;
+}
+
+.contentWrapper {
+  background-color: var(--white, white);
+  padding: 20px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(53, 58, 140, 0.3);
+}
+// End here
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
+}

@@ -1,0 +1,29 @@
+name: $(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+
+trigger:
+  - develop
+
+pool:
+  name: WizardsOfCov
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '12.x'
+    displayName: 'Install Node.js'
+
+  - task: Npm@1
+    inputs:
+      command: 'install'
+      customRegistry: 'useNpmrc'
+
+  - script: set CI=true && npm run test
+    displayName: 'Run Unit Tests'
+
+  - script: npm run build
+    displayName: 'Build React Website'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      pathtoPublish: '$(System.DefaultWorkingDirectory)/build'
+      artifactName: 'dist'

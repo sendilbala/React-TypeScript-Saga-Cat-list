@@ -1,0 +1,17 @@
+/build/**
+/coverage/**
+/docs/**
+/dist/**
+/public/**
+/node_modules/**
+/reports
+/stories
+/src/assets/**
+/src/**/__tests__/**
+/src/*.test.tsx
+/src/**/*.scss
+log
+logs
+snapshots
+!.storybook
+serviceWorker.ts
