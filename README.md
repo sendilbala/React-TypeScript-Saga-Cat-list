@@ -1,7 +1,7 @@
-# Install and launching Storybook
+# Install and launching 
 
 ```sh
-git clone the repo COV-IMS-UI
+git clone the repo 
 cd  COV-IMS-UI
 npm install
 
